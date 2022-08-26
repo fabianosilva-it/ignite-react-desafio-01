@@ -18,7 +18,6 @@ export function TaskList() {
     // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
 
     if (newTaskTitle == '' ){
-      alert('Não é permitido título em branco')
       return
     }
     
@@ -55,7 +54,7 @@ export function TaskList() {
 
       let newTasksList = tasks;
       newTasksList.splice(selectedTaskId, 1);
-      
+
       setTasks([...newTasksList]);
     }
 
